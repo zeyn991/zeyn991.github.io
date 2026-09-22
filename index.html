@@ -10,7 +10,7 @@
 
     <header id="site-header" class="site-header">
         <div class="container header-inner">
-            <div class="logo" aria-hidden="true">КГ</div>
+            <img src="logo.png" alt="Логотип сайта" class="logo">
             <p class="site-title">Кафедра информационных технологий КубГУ</p>
         </div>
     </header>
@@ -28,61 +28,60 @@
     <main class="container content">
 
         <section id="schedule" class="page-section">
-            <h1>Расписание занятий</h1>
+            <h1>Каталог автомобилей</h1>
             <table class="schedule-table">
                 <thead>
                     <tr>
-                        <th>Пара</th>
-                        <th>Понедельник</th>
-                        <th>Вторник</th>
-                        <th>Среда</th>
-                        <th>Четверг</th>
-                        <th>Пятница</th>
+                        <th>Марка</th>
+                        <th>Модель</th>
+                        <th>Год выпуска</th>
+                        <th>Кузов</th>
+                        <th>Цена</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1 пара<br>9:00–10:30</td>
-                        <td>Веб-программирование</td>
-                        <td>Базы данных</td>
-                        <td>—</td>
-                        <td>Английский язык</td>
-                        <td>Физическая культура</td>
+                        <td rowspan="2">Toyota</td>
+                        <td>Camry</td>
+                        <td>2024</td>
+                        <td>Седан</td>
+                        <td>2 500 000 ₽</td>
                     </tr>
                     <tr>
-                        <td>2 пара<br>10:40–12:10</td>
-                        <td>Операционные системы</td>
-                        <td>Веб-программирование</td>
-                        <td>Алгоритмы и структуры данных</td>
-                        <td>—</td>
-                        <td>Сети ЭВМ</td>
+                        <td>Corolla</td>
+                        <td>2023</td>
+                        <td>Седан</td>
+                        <td>1 800 000 ₽</td>
                     </tr>
                     <tr>
-                        <td>3 пара<br>12:20–13:50</td>
-                        <td>Математический анализ</td>
-                        <td>—</td>
-                        <td>Базы данных</td>
-                        <td>Проектирование ИС</td>
-                        <td>—</td>
+                        <td rowspan="2">Kia</td>
+                        <td>Sportage</td>
+                        <td>2024</td>
+                        <td>Кроссовер</td>
+                        <td>2 900 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td>Rio</td>
+                        <td>2023</td>
+                        <td>Хэтчбек</td>
+                        <td>1 400 000 ₽</td>
                     </tr>
                     <tr class="break-row">
-                        <td colspan="6">Обеденный перерыв</td>
+                        <td colspan="5">Специальное предложение — скидка 10% при покупке в trade-in</td>
                     </tr>
                     <tr>
-                        <td>4 пара<br>14:30–16:00</td>
-                        <td>Проектирование ИС</td>
-                        <td>Английский язык</td>
-                        <td>—</td>
-                        <td>Веб-программирование</td>
-                        <td>Математический анализ</td>
+                        <td>BMW</td>
+                        <td>X5</td>
+                        <td>2024</td>
+                        <td>Внедорожник</td>
+                        <td>6 200 000 ₽</td>
                     </tr>
                     <tr>
-                        <td>5 пара<br>16:10–17:40</td>
-                        <td>—</td>
-                        <td>Сети ЭВМ</td>
-                        <td>Операционные системы</td>
-                        <td>—</td>
-                        <td>Алгоритмы и структуры данных</td>
+                        <td>Hyundai</td>
+                        <td>Solaris</td>
+                        <td>2023</td>
+                        <td>Седан</td>
+                        <td>1 500 000 ₽</td>
                     </tr>
                 </tbody>
             </table>
@@ -91,7 +90,7 @@
         <section id="links" class="page-section">
             <h2>Задание 1. Список гиперссылок</h2>
 
-            <ul>
+            <ul class="link-list">
                 <li><a href="http://kubsu.ru/">КубГУ (http)</a></li>
                 <li><a href="https://kubsu.ru/">КубГУ (https)</a></li>
                 <li>
@@ -128,7 +127,7 @@
                 <li><a href="ftp://user:password@ftp.example.com/file.zip">Скачать файл с FTP</a></li>
             </ul>
 
-            <ol>
+            <ol class="source-list">
                 <li><a href="https://kubsu.ru/" title="Официальный сайт университета">КубГУ</a></li>
                 <li><a href="https://html5book.ru/" title="Учебник по HTML и CSS">HTML5Book</a></li>
                 <li><a href="https://validator.w3.org/" title="Валидатор HTML-разметки">W3C Validator</a></li>
@@ -203,3 +202,4 @@
 
 </body>
 </html>
+
