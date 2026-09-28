@@ -171,12 +171,12 @@ h1, h2 {
     text-align: center;
     padding: 15px 0;
 }
-#main-aside-wrapper {
+.menu {
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 800px) {
-  #main-aside-wrapper {
+  .menu {
     flex-direction: row;
   }
 }
