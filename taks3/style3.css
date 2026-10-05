@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -20,6 +21,7 @@ a {
 h1, h2 {
     color: #1a1a1a;
 }
+
 
 
 
@@ -59,7 +61,8 @@ h1, h2 {
 .menu {
     list-style: none;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
     margin: 0;
     padding: 10px 0;
 }
@@ -73,8 +76,17 @@ h1, h2 {
     text-decoration: underline;
 }
 
+/* Телефон: Таблица, Список ссылок, Форма */
+.menu-schedule { order: 1; }
+.menu-links    { order: 2; }
+.menu-form     { order: 3; }
+
+
+
 
 .content {
+    display: flex;
+    flex-direction: column;
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -85,6 +97,13 @@ h1, h2 {
     margin-bottom: 25px;
     border: 1px solid #ddd;
 }
+
+/* Телефон: каталог, ссылки, форма */
+#schedule { order: 1; }
+#links    { order: 2; }
+#form     { order: 3; }
+
+
 
 
 .schedule-table {
@@ -120,6 +139,7 @@ h1, h2 {
 }
 
 
+
 .link-list {
     padding-left: 20px;
 }
@@ -131,6 +151,7 @@ h1, h2 {
 .source-list {
     padding-left: 20px;
 }
+
 
 
 
@@ -161,7 +182,6 @@ h1, h2 {
 }
 
 
-
 #site-footer.site-footer {
     width: 100%;
     background-color: #2c3e50;
@@ -169,12 +189,23 @@ h1, h2 {
     text-align: center;
     padding: 15px 0;
 }
-#main-aside-wrapper {
-  display: flex;
-  flex-direction: column;
-}
+
+
+
+
 @media screen and (min-width: 800px) {
-  #main-aside-wrapper {
-    flex-direction: row;
-  }
+    .menu {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    /* Меню: Список ссылок, Таблица, Форма */
+    .menu-links    { order: 1; }
+    .menu-schedule { order: 2; }
+    .menu-form     { order: 3; }
+
+    /* Блоки: ссылки, каталог, форма */
+    #links    { order: 1; }
+    #schedule { order: 2; }
+    #form     { order: 3; }
 }
