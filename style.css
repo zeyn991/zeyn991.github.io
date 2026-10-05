@@ -78,7 +78,7 @@ h1, h2 {
     text-decoration: underline;
 }
 
-/* Телефон: Таблица, Список ссылок, Форма */
+
 .menu-schedule { order: 1; }
 .menu-links    { order: 2; }
 .menu-form     { order: 3; }
@@ -201,12 +201,10 @@ h1, h2 {
         gap: 20px;
     }
 
-    /* Меню: Список ссылок, Таблица, Форма */
     .menu-links    { order: 1; }
     .menu-schedule { order: 2; }
     .menu-form     { order: 3; }
 
-    /* Блоки: ссылки, каталог, форма */
     #links    { order: 1; }
     #schedule { order: 2; }
     #form     { order: 3; }
