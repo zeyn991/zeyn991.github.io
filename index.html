@@ -4,192 +4,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>КубГУ — Разработка пользовательского Web-интерфейса</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-light">
 
-    <header id="site-header" class="site-header">
-        <div class="container header-inner">
-            <img src="logo.png" alt="Логотип сайта" class="logo">
-            <p class="site-title">Добро пожаловать на официальный сайт Zeyn</p>
+    <header class="bg-dark text-white">
+        <div class="container d-flex align-items-center gap-3 py-3">
+            <img src="logo.png" alt="Логотип сайта" class="logo bg-white px-2 py-1">
+            <p class="fw-bold fs-5 m-0">Добро пожаловать на официальный сайт Zeyn</p>
         </div>
     </header>
 
-    <nav id="main-nav" class="main-nav">
-        <div class="container">
-            <ul class="menu">
-                <li class="menu-links"><a href="#links">Список ссылок</a></li>
-                <li class="menu-schedule"><a href="#schedule">Таблица</a></li>
-                <li class="menu-form"><a href="#form">Форма</a></li>
+    <nav class="bg-secondary">
+        <div class="container py-2">
+            <ul class="nav flex-column flex-md-row gap-md-3">
+                <li class="nav-item order-2 order-md-1">
+                    <a class="nav-link text-white px-0 px-md-2" href="#links">Список ссылок</a>
+                </li>
+                <li class="nav-item order-1 order-md-2">
+                    <a class="nav-link text-white px-0 px-md-2" href="#schedule">Таблица</a>
+                </li>
+                <li class="nav-item order-3">
+                    <a class="nav-link text-white px-0 px-md-2" href="#form">Форма</a>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <main class="container content">
+    <main class="container d-flex flex-column py-4">
 
-        <section id="schedule" class="page-section">
-            <h1>Каталог автомобилей</h1>
-            <table class="schedule-table">
-                <thead>
-                    <tr>
-                        <th>Марка</th>
-                        <th>Модель</th>
-                        <th>Год выпуска</th>
-                        <th>Цена</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td rowspan="2">Mercedes</td>
-                        <td>E-class</td>
-                        <td>2006</td>
-                        <td>1 500 000 ₽</td>
-                    </tr>
-                    <tr>
-                        <td>C-class</td>
-                        <td>2012</td>
-                        <td>1 800 000 ₽</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">Audi</td>
-                        <td>Q8</td>
-                        <td>2024</td>
-                        <td>7 900 000 ₽</td>
-                    </tr>
-                    <tr>
-                        <td>Rs7</td>
-                        <td>2023</td>
-                        <td>8 400 000 ₽</td>
-                    </tr>
-                    <tr class="break-row">
-                        <td colspan="4">Специальное предложение — скидка 10% при покупке в trade-in</td>
-                    </tr>
-                    <tr>
-                        <td>BMW</td>
-                        <td>X5</td>
-                        <td>2024</td>
-                        <td>6 200 000 ₽</td>
-                    </tr>
-                    <tr>
-                        <td>Ferrari</td>
-                        <td>SuperFast 812</td>
-                        <td>2023</td>
-                        <td>25 500 000 ₽</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section id="schedule" class="bg-white border p-3 p-md-4 mb-4 order-1 order-md-2">
+            <h1 class="h2">Каталог автомобилей</h1>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped align-middle mt-3 mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Марка</th>
+                            <th scope="col">Модель</th>
+                            <th scope="col">Год выпуска</th>
+                            <th scope="col">Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">Mercedes</td>
+                            <td>E-class</td>
+                            <td>2006</td>
+                            <td>1 500 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>C-class</td>
+                            <td>2012</td>
+                            <td>1 800 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Audi</td>
+                            <td>Q8</td>
+                            <td>2024</td>
+                            <td>7 900 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Rs7</td>
+                            <td>2023</td>
+                            <td>8 400 000 ₽</td>
+                        </tr>
+                        <tr class="break-row">
+                            <td colspan="4" class="text-center fst-italic">Специальное предложение — скидка 10% при покупке в trade-in</td>
+                        </tr>
+                        <tr>
+                            <td>BMW</td>
+                            <td>X5</td>
+                            <td>2024</td>
+                            <td>6 200 000 ₽</td>
+                        </tr>
+                        <tr>
+                            <td>Ferrari</td>
+                            <td>SuperFast 812</td>
+                            <td>2023</td>
+                            <td>25 500 000 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
-        <section id="links" class="page-section">
+        <section id="links" class="bg-white border p-3 p-md-4 mb-4 order-2 order-md-1">
             <h2>Задание 1. Список гиперссылок</h2>
 
-            <ul class="link-list">
-                <li><a href="http://kubsu.ru/">КубГУ (http)</a></li>
-                <li><a href="https://kubsu.ru/">КубГУ (https)</a></li>
-                <li>
-                    <img src="image.jpg" alt="Цветок" style="width: 300px;">
-                </li>
-                <li><a href="/ron1.html">Внутренняя страница</a></li>
-                <li><a href="/">Главная страница</a></li>
-                <li><a href="#form">Перейти к форме</a></li>
-                <li><a href="hello.html?name=Pasha&amp;age=18&amp;city=Krasnodar">Ссылка с параметрами</a></li>
-                <li><a href="page.html?id=5">Товар 5</a></li>
-                <li><a href="hello.html">Страница в текущем каталоге</a></li>
-                <li><a href="about/hello.html">Страница в каталоге about</a></li>
-                <li><a href="level1/index.html">Страница уровнем выше</a></li>
-                <li><a href="level1/lvl2/page.html">Страница двумя уровнями выше</a></li>
-                <li>
-                    <p>
-                        Подробнее о нашем университете можно узнать на
-                        <a href="https://kubsu.ru/">официальном сайте КубГУ</a>,
-                        где собрана вся актуальная информация.
-                    </p>
-                </li>
-                <li><a href="https://html5book.ru/css-css3/#vid_vpaut_div">Фрагмент стороннего сайта</a></li>
-                <li>
-                    <img src="image.jpg" alt="Карта ссылок" usemap="#mymap" width="300" height="200">
-                    <map name="mymap">
-                        <area shape="rect" coords="0,0,100,100" href="https://kubsu.ru/" alt="Прямоугольная зона">
-                        <area shape="circle" coords="200,100,50" href="https://html5book.ru/" alt="Круглая зона">
-                    </map>
-                </li>
-                <li><a href="">Пустая ссылка</a></li>
-                <li><a href="#">Ссылка без href</a></li>
-                <li><a href="https://kubsu.ru/" rel="nofollow">Ссылка nofollow</a></li>
-                <li><a href="https://kubsu.ru/" rel="noindex">Ссылка noindex</a></li>
-                <li><a href="ftp://user:password@ftp.example.com/file.zip">Скачать файл с FTP</a></li>
-            </ul>
+            <div class="row g-4">
+                <div class="col-12 col-lg-8">
+                    <ul class="ps-3">
+                        <li class="py-1"><a href="http://kubsu.ru/">КубГУ (http)</a></li>
+                        <li class="py-1"><a href="https://kubsu.ru/">КубГУ (https)</a></li>
+                        <li class="py-1">
+                            <img src="image.jpg" alt="Цветок" width="300" class="img-fluid">
+                        </li>
+                        <li class="py-1"><a href="/ron1.html">Внутренняя страница</a></li>
+                        <li class="py-1"><a href="/">Главная страница</a></li>
+                        <li class="py-1"><a href="#form">Перейти к форме</a></li>
+                        <li class="py-1"><a href="hello.html?name=Pasha&amp;age=18&amp;city=Krasnodar">Ссылка с параметрами</a></li>
+                        <li class="py-1"><a href="page.html?id=5">Товар 5</a></li>
+                        <li class="py-1"><a href="hello.html">Страница в текущем каталоге</a></li>
+                        <li class="py-1"><a href="about/hello.html">Страница в каталоге about</a></li>
+                        <li class="py-1"><a href="level1/index.html">Страница уровнем выше</a></li>
+                        <li class="py-1"><a href="level1/lvl2/page.html">Страница двумя уровнями выше</a></li>
+                        <li class="py-1">
+                            <p class="mb-0">
+                                Подробнее о нашем университете можно узнать на
+                                <a href="https://kubsu.ru/">официальном сайте КубГУ</a>,
+                                где собрана вся актуальная информация.
+                            </p>
+                        </li>
+                        <li class="py-1"><a href="https://html5book.ru/css-css3/#vid_vpaut_div">Фрагмент стороннего сайта</a></li>
+                        <li class="py-1">
+                            <img src="image.jpg" alt="Карта ссылок" usemap="#mymap" width="300" height="200">
+                            <map name="mymap">
+                                <area shape="rect" coords="0,0,100,100" href="https://kubsu.ru/" alt="Прямоугольная зона">
+                                <area shape="circle" coords="200,100,50" href="https://html5book.ru/" alt="Круглая зона">
+                            </map>
+                        </li>
+                        <li class="py-1"><a href="">Пустая ссылка</a></li>
+                        <li class="py-1"><a href="#">Ссылка без href</a></li>
+                        <li class="py-1"><a href="https://kubsu.ru/" rel="nofollow">Ссылка nofollow</a></li>
+                        <li class="py-1"><a href="ftp://user:password@ftp.example.com/file.zip">Скачать файл с FTP</a></li>
+                    </ul>
+                </div>
 
-            <ol class="source-list">
-                <li><a href="https://kubsu.ru/" title="Официальный сайт университета">КубГУ</a></li>
-                <li><a href="https://html5book.ru/" title="Учебник по HTML и CSS">HTML5Book</a></li>
-                <li><a href="https://validator.w3.org/" title="Валидатор HTML-разметки">W3C Validator</a></li>
-            </ol>
+                <div class="col-12 col-lg-4">
+                    <h3 class="h5">Полезные ресурсы</h3>
+                    <ol class="ps-3">
+                        <li><a href="https://kubsu.ru/" title="Официальный сайт университета">КубГУ</a></li>
+                        <li><a href="https://html5book.ru/" title="Учебник по HTML и CSS">HTML5Book</a></li>
+                        <li><a href="https://validator.w3.org/" title="Валидатор HTML-разметки">W3C Validator</a></li>
+                    </ol>
+                </div>
+            </div>
         </section>
 
-        <section id="form" class="page-section">
+        <section id="form" class="bg-white border p-3 p-md-4 mb-4 order-3">
             <h2>Задание 1. Форма</h2>
 
-            <form action="/" method="POST" class="feedback-form">
+            <form action="/" method="POST" class="mt-3">
+                <div class="row g-3">
 
-                <label>
-                    ФИО:<br>
-                    <input name="field-name-1" value="">
-                </label><br>
+                    <div class="col-12 col-md-6">
+                        <label for="field-name-1" class="form-label">ФИО:</label>
+                        <input id="field-name-1" name="field-name-1" class="form-control">
+                    </div>
 
-                <label>
-                    Номер телефона:<br>
-                    <input name="field-phone" type="tel" placeholder="Введите ваш номер телефона">
-                </label><br>
+                    <div class="col-12 col-md-6">
+                        <label for="field-phone" class="form-label">Номер телефона:</label>
+                        <input id="field-phone" name="field-phone" type="tel" class="form-control" placeholder="Введите ваш номер телефона">
+                    </div>
 
-                <label>
-                    Введите email:<br>
-                    <input name="field-email" type="email" placeholder="Введите вашу почту">
-                </label><br>
+                    <div class="col-12 col-md-6">
+                        <label for="field-email" class="form-label">Введите email:</label>
+                        <input id="field-email" name="field-email" type="email" class="form-control" placeholder="Введите вашу почту">
+                    </div>
 
-                <label>
-                    Дата:<br>
-                    <input name="field-date" type="date">
-                </label><br>
+                    <div class="col-12 col-md-6">
+                        <label for="field-date" class="form-label">Дата:</label>
+                        <input id="field-date" name="field-date" type="date" class="form-control">
+                    </div>
 
-                Ваш пол:<br>
-                <label><input type="radio" checked name="radio-group-1" value="Значение1"> муж</label>
-                <label><input type="radio" name="radio-group-1" value="Значение2"> жен</label><br>
+                    <div class="col-12 col-md-6">
+                        <span class="form-label d-block">Ваш пол:</span>
+                        <div class="form-check form-check-inline">
+                            <input id="gender-m" class="form-check-input" type="radio" checked name="radio-group-1" value="Значение1">
+                            <label for="gender-m" class="form-check-label">муж</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input id="gender-f" class="form-check-input" type="radio" name="radio-group-1" value="Значение2">
+                            <label for="gender-f" class="form-check-label">жен</label>
+                        </div>
+                    </div>
 
-                <label>
-                    Список (listbox с множественным выбором):<br>
-                    <select name="field-name-12[]" multiple>
-                        <option value="Значение1">Pascal</option>
-                        <option value="Значение2" selected>C</option>
-                        <option value="Значение3">C++</option>
-                        <option value="Значение4">JavaScript</option>
-                        <option value="Значение5">C#</option>
-                        <option value="Значение6">Python</option>
-                        <option value="Значение7">Java</option>
-                        <option value="Значение8">Haskell</option>
-                        <option value="Значение9">Clojure</option>
-                        <option value="Значение10">Prolog</option>
-                        <option value="Значение11">Scala</option>
-                    </select>
-                </label><br>
+                    <div class="col-12 col-md-6">
+                        <label for="field-name-12" class="form-label">Список (listbox с множественным выбором):</label>
+                        <select id="field-name-12" name="field-name-12[]" class="form-select" multiple>
+                            <option value="Значение1">Pascal</option>
+                            <option value="Значение2" selected>C</option>
+                            <option value="Значение3">C++</option>
+                            <option value="Значение4">JavaScript</option>
+                            <option value="Значение5">C#</option>
+                            <option value="Значение6">Python</option>
+                            <option value="Значение7">Java</option>
+                            <option value="Значение8">Haskell</option>
+                            <option value="Значение9">Clojure</option>
+                            <option value="Значение10">Prolog</option>
+                            <option value="Значение11">Scala</option>
+                        </select>
+                    </div>
 
-                <label>
-                    Биография:<br>
-                    <textarea name="field-name-2" rows="4"></textarea>
-                </label><br>
+                    <div class="col-12">
+                        <label for="field-name-2" class="form-label">Биография:</label>
+                        <textarea id="field-name-2" name="field-name-2" class="form-control" rows="4"></textarea>
+                    </div>
 
-                С контрактом ознакомлен(а)
-                <label><input type="checkbox" checked name="check-1"></label><br>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input id="check-1" class="form-check-input" type="checkbox" checked name="check-1">
+                            <label for="check-1" class="form-check-label">С контрактом ознакомлен(а)</label>
+                        </div>
+                    </div>
 
-                <input type="submit" value="СОХРАНИТЬ">
+                    <div class="col-12">
+                        <input type="submit" value="СОХРАНИТЬ" class="btn btn-dark px-4">
+                    </div>
+
+                </div>
             </form>
         </section>
 
     </main>
 
-    <footer id="site-footer" class="site-footer">
+    <footer class="bg-dark text-white text-center py-3">
         <div class="container">
-            <p>&copy; 2026 Ящук Павел</p>
+            <p class="mb-0">&copy; 2026 Ящук Павел</p>
         </div>
     </footer>
 
