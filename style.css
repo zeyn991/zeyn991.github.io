@@ -1,6 +1,7 @@
 
 
-body {
+
+    body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -24,6 +25,7 @@ h1, h2 {
 }
 
 
+/* ---------- Шапка ---------- */
 
 #site-header.site-header {
     width: 100%;
@@ -53,6 +55,8 @@ h1, h2 {
 }
 
 
+/* ---------- Меню ---------- */
+
 #main-nav.main-nav {
     width: 100%;
     background-color: #34495e;
@@ -61,7 +65,8 @@ h1, h2 {
 .menu {
     list-style: none;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
     margin: 0;
     padding: 10px 0;
 }
@@ -75,8 +80,17 @@ h1, h2 {
     text-decoration: underline;
 }
 
+/* Телефон: Таблица, Список ссылок, Форма */
+.menu-schedule { order: 1; }
+.menu-links    { order: 2; }
+.menu-form     { order: 3; }
+
+
+/* ---------- Основное содержимое ---------- */
 
 .content {
+    display: flex;
+    flex-direction: column;
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -88,6 +102,13 @@ h1, h2 {
     border: 1px solid #ddd;
 }
 
+/* Телефон: каталог, ссылки, форма */
+#schedule { order: 1; }
+#links    { order: 2; }
+#form     { order: 3; }
+
+
+/* ---------- Таблица ---------- */
 
 .schedule-table {
     width: 100%;
@@ -122,6 +143,8 @@ h1, h2 {
 }
 
 
+/* ---------- Ссылки ---------- */
+
 .link-list {
     padding-left: 20px;
 }
@@ -135,6 +158,7 @@ h1, h2 {
 }
 
 
+/* ---------- Форма ---------- */
 
 .feedback-form input[type="text"],
 .feedback-form input[type="tel"],
@@ -163,6 +187,7 @@ h1, h2 {
 }
 
 
+/* ---------- Подвал ---------- */
 
 #site-footer.site-footer {
     width: 100%;
@@ -171,12 +196,23 @@ h1, h2 {
     text-align: center;
     padding: 15px 0;
 }
-.menu {
-  display: flex;
-  flex-direction: column;
-}
+
+
+/* ---------- Компьютер (от 800px) ---------- */
+
 @media screen and (min-width: 800px) {
-  .menu {
-    flex-direction: row;
-  }
+    .menu {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    /* Меню: Список ссылок, Таблица, Форма */
+    .menu-links    { order: 1; }
+    .menu-schedule { order: 2; }
+    .menu-form     { order: 3; }
+
+    /* Блоки: ссылки, каталог, форма */
+    #links    { order: 1; }
+    #schedule { order: 2; }
+    #form     { order: 3; }
 }
