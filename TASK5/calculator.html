@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор стоимости заказа — КубГУ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculator.js" defer></script>
+</head>
+<body>
 
+    <header id="site-header" class="site-header">
+        <div class="container header-inner">
+            <img src="logo.png" alt="Логотип сайта" class="logo">
+            <p class="site-title">Кафедра информационных технологий КубГУ</p>
+        </div>
+    </header>
+
+    <nav id="main-nav" class="main-nav">
+        <div class="container">
+            <ul class="menu">
+                <li><a href="index.html#links">Список ссылок</a></li>
+                <li><a href="index.html#schedule">Таблица</a></li>
+                <li><a href="index.html#form">Форма</a></li>
+                <li><a href="calculator.html">Калькулятор</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container content">
+
+        <section id="calculator" class="page-section">
+            <h1>Калькулятор стоимости заказа</h1>
+            <p>Выберите товар, укажите количество и нажмите кнопку, чтобы узнать стоимость заказа.</p>
+
+            <form id="calc-form" class="calc-form" novalidate>
+
+                <label for="calc-product">
+                    Товар:
+                    <select id="calc-product">
+                        <option value="2500">Наушники — 2500 ₽</option>
+                        <option value="4300">Клавиатура — 4300 ₽</option>
+                        <option value="1200">Компьютерная мышь — 1200 ₽</option>
+                        <option value="15800">Монитор — 15800 ₽</option>
+                    </select>
+                </label>
+
+                <label for="calc-quantity">
+                    Количество:
+                    <input type="text" id="calc-quantity" placeholder="Например, 3" autocomplete="off">
+                </label>
+
+                <button type="button" id="calc-button">Подсчитать стоимость</button>
+
+                <p id="calc-error" class="calc-error" hidden></p>
+                <p id="calc-result" class="calc-result" hidden></p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer id="site-footer" class="site-footer">
+        <div class="container">
+            <p>&copy; 2023 Сергей Синица</p>
+        </div>
+    </footer>
+
+</body>
+</html>
