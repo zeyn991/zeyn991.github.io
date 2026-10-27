@@ -1,1 +1,14 @@
+.logo {
+    height: 40px;
+    width: auto;
+}
 
+.break-row td {
+    background-color: #f2e2c4;
+}
+
+#schedule,
+#links,
+#form {
+    scroll-margin-top: 10px;
+}
